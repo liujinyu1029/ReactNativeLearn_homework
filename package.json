@@ -1,0 +1,23 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "2017年3月开始在珠峰学习ReactNative开发，这个项目中记录的是家庭作业部分，也放一些学习总结！",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liujinyu1029/ReactNativeLearn_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liujinyu1029/ReactNativeLearn_homework/issues"
+  },
+  "homepage": "https://github.com/liujinyu1029/ReactNativeLearn_homework#readme"
+}
