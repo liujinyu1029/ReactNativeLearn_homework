@@ -22,15 +22,14 @@ export default class loginPage extends Component {
   }
   componentWillMount () {
     this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
-    // this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this._keyboardWillHide.bind(this));
+    this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this._keyboardWillHide.bind(this));
   }
   // componentWillUnmount () {
   //   this.keyboardWillShowListener.remove();
   //   this.keyboardWillHideListener.remove();
   // }
   _keyboardWillShow () {
-    console.log(this.state.imgIsShow)
-    this.setState({imgIsShow: !this.state.imgIsShow});
+    this.setState({imgIsShow: false});
   }
   _keyboardWillHide () {
     this.setState({imgIsShow: true});
