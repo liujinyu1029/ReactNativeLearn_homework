@@ -84,9 +84,9 @@ export default class loginPage extends Component {
         <Animated.View style={{
           position:'absolute',
           top:Dimensions.get('window').height / 2 -170,
-          opacity: this.state.fadeInOpacity,
+          opacity: this.state.fadeInOpacity
           
-        }}>
+        }} >
           <Image source={require('../image/mao.jpg')} style={{width : 100, height : 80}}  />
         </Animated.View>
 
@@ -113,7 +113,7 @@ export default class loginPage extends Component {
             />
           </View>
           <View style={style.loginStyle}>
-            <Button title='登录' color="#000" onPress={ensure_lock(this._play)}/>
+            <Button title='登录' color="#000" onPress={()=>{}}/>
           </View>
         </Animated.View>
       </View>

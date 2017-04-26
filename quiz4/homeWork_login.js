@@ -32,7 +32,7 @@ export default class loginPage extends Component {
         {
           toValue : 1,
           duration : 400,// 动画时间
-          easing: Easing.linear // 缓动函数 
+          easing: Easing.linear // 缓动函数
         }
       ),
       Animated.timing(
@@ -40,7 +40,7 @@ export default class loginPage extends Component {
         {
           toValue : 0,
           duration : 200  ,// 动画时间
-          easing: Easing.linear // 缓动函数                    
+          easing: Easing.linear // 缓动函数
         }
       )
     ]).start()
@@ -52,7 +52,7 @@ export default class loginPage extends Component {
         {
           toValue : 0,
           duration : 400,
-          easing: Easing.linear // 缓动函数 
+          easing: Easing.linear // 缓动函数
         }
       ),
       Animated.timing(
@@ -60,12 +60,12 @@ export default class loginPage extends Component {
         {
           toValue : 1,
           duration : 200  ,// 动画时间
-          easing: Easing.linear // 缓动函数                    
+          easing: Easing.linear // 缓动函数
         }
       )
     ]).start()
   }
- 
+
   componentWillMount () {
     this.keyboardWillShowListener = Keyboard.addListener('keyboardWillShow', this._keyboardWillShow.bind(this));
     this.keyboardWillHideListener = Keyboard.addListener('keyboardWillHide', this._keyboardWillHide.bind(this));
@@ -85,7 +85,7 @@ export default class loginPage extends Component {
           position:'absolute',
           top:Dimensions.get('window').height / 2 -170,
           opacity: this.state.fadeInOpacity,
-          
+
         }}>
           <Image source={require('../image/mao.jpg')} style={{width : 100, height : 80}}  />
         </Animated.View>
@@ -113,7 +113,7 @@ export default class loginPage extends Component {
             />
           </View>
           <View style={style.loginStyle}>
-            <Button title='登录' color="#000" onPress={ensure_lock(this._play)}/>
+            <Button title='登录' color="#000" onPress={()=>{}}/>
           </View>
         </Animated.View>
       </View>

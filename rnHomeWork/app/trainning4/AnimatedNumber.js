@@ -7,6 +7,9 @@ class AnimatedNumber extends Component{
     duration:300,
     gap:300
   }
+  static propTypes  = {
+    number:React.PropTypes.string
+  }
   render (){
     const numberArr = (this.props.number+'').match(/[\d\.]/g)
     return (
